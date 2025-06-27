@@ -4,6 +4,7 @@
     <type fullname="Arkanoid.Gameplay.Features.Balls.Configs.BallConfigWrapper" preserve="all" />
     <type fullname="Arkanoid.Gameplay.Features.Blocks.Configs.BlockConfigWrapper" preserve="all" />
     <type fullname="Arkanoid.Gameplay.Features.Blocks.Configs.GeneralBlocksConfigWrapper" preserve="all" />
+    <type fullname="Arkanoid.Gameplay.Features.Effects.Configs.EffectConfigWrapper" preserve="all" />
     <type fullname="Arkanoid.Gameplay.Features.GameField.Configs.FieldConfigWrapper" preserve="all" />
     <type fullname="Arkanoid.Gameplay.Features.Levels.Configs.LevelConfigWrapper" preserve="all" />
     <type fullname="Arkanoid.Gameplay.Features.Levels.Configs.PackConfigWrapper" preserve="all" />
@@ -13,6 +14,7 @@
     <type fullname="Arkanoid.Gameplay.Features.ViewSync.Providers.SpriteRendererComponentProvider" preserve="all" />
     <type fullname="Arkanoid.Gameplay.Features.ViewSync.Providers.TransformComponentProvider" preserve="all" />
     <type fullname="Arkanoid.Infrastructure.ConfigsProviding.Manifests.BlocksConfigsManifest" preserve="all" />
+    <type fullname="Arkanoid.Infrastructure.ConfigsProviding.Manifests.EffectsConfigsManifest" preserve="all" />
     <type fullname="Arkanoid.Infrastructure.ConfigsProviding.Manifests.GeneralConfigsManifest" preserve="all" />
     <type fullname="Arkanoid.Infrastructure.ConfigsProviding.Manifests.LevelsManifest" preserve="all" />
     <type fullname="Arkanoid.Infrastructure.ConfigsProviding.Manifests.PacksManifest" preserve="all" />
@@ -28,6 +30,14 @@
     <type fullname="Arkanoid.Gameplay.Features.Blocks.Configs.BlockId" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Gameplay.Features.Blocks.Configs.GeneralBlocksConfig" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Gameplay.Features.Damage.Health" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Damage.Invulnerable" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Effects.AreaDamageRequest" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Effects.BlockColor" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Effects.ChainColorBombRequest" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Effects.Configs.EffectConfig" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Effects.Configs.EffectId" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Effects.LineBombRequest" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Effects.TriggerEffectOnDestruction" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Gameplay.Features.GameField.Configs.FieldConfig" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Gameplay.Features.LevelProgress.CountsForWin" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Gameplay.Features.Levels.Configs.LevelConfig" preserve="nothing" serialized="true" />
@@ -71,6 +81,7 @@
     <type fullname="TMPro.LigatureSubstitutionRecord" preserve="nothing" serialized="true" />
     <type fullname="TMPro.MarkPositionAdjustment" preserve="nothing" serialized="true" />
     <type fullname="TMPro.MarkToBaseAdjustmentRecord" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_Character" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_FontFeatureTable" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_FontWeightPair" preserve="nothing" serialized="true" />
     <type fullname="TMPro.VertexGradient" preserve="nothing" serialized="true" />
@@ -114,6 +125,7 @@
   </assembly>
   <assembly fullname="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Canvas" preserve="all" />
+    <type fullname="UnityEngine.CanvasGroup" preserve="all" />
     <type fullname="UnityEngine.CanvasRenderer" preserve="all" />
   </assembly>
   <assembly fullname="Identifiers">
@@ -121,6 +133,8 @@
   </assembly>
   <assembly fullname="UnityEngine.TextCoreFontEngineModule">
     <type fullname="UnityEngine.TextCore.FaceInfo" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.TextCore.Glyph" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.TextCore.GlyphMetrics" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.TextCore.GlyphRect" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.TextCore.LowLevel.GlyphAdjustmentRecord" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.TextCore.LowLevel.GlyphPairAdjustmentRecord" preserve="nothing" serialized="true" />
