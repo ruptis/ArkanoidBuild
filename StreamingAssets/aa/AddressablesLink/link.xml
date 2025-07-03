@@ -1,12 +1,11 @@
 <linker>
   <assembly fullname="Arkanoid, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-    <type fullname="Arkanoid.Bootstrap.Scopes.GameplayScope" preserve="all" />
+    <type fullname="Arkanoid.Bootstrap.Scopes.SceneScope" preserve="all" />
     <type fullname="Arkanoid.Gameplay.Features.Balls.Configs.BallConfigWrapper" preserve="all" />
     <type fullname="Arkanoid.Gameplay.Features.Blocks.Configs.BlockConfigWrapper" preserve="all" />
     <type fullname="Arkanoid.Gameplay.Features.Blocks.Configs.GeneralBlocksConfigWrapper" preserve="all" />
+    <type fullname="Arkanoid.Gameplay.Features.Cheats.View.CheatsView" preserve="all" />
     <type fullname="Arkanoid.Gameplay.Features.Effects.Configs.EffectConfigWrapper" preserve="all" />
-    <type fullname="Arkanoid.Gameplay.Features.GameField.Configs.FieldConfigWrapper" preserve="all" />
-    <type fullname="Arkanoid.Gameplay.Features.Levels.Configs.LevelConfigWrapper" preserve="all" />
     <type fullname="Arkanoid.Gameplay.Features.Levels.Configs.PackConfigWrapper" preserve="all" />
     <type fullname="Arkanoid.Gameplay.Features.Paddle.Configs.PaddleConfigWrapper" preserve="all" />
     <type fullname="Arkanoid.Gameplay.Features.Physics.Configs.PhysicsConfigWrapper" preserve="all" />
@@ -19,9 +18,16 @@
     <type fullname="Arkanoid.Infrastructure.ConfigsProviding.Manifests.LevelsManifest" preserve="all" />
     <type fullname="Arkanoid.Infrastructure.ConfigsProviding.Manifests.PacksManifest" preserve="all" />
     <type fullname="Arkanoid.Infrastructure.EntityViews.EntityBehaviour" preserve="all" />
+    <type fullname="Arkanoid.LevelMap.Configs.LevelMapVisualsConfigWrapper" preserve="all" />
+    <type fullname="Arkanoid.LevelMap.Providers.LevelNodeViewProvider" preserve="all" />
+    <type fullname="Arkanoid.LevelMap.Providers.LineRendererComponentProvider" preserve="all" />
+    <type fullname="Arkanoid.LevelMap.View.LevelNodeView" preserve="all" />
     <type fullname="Arkanoid.UI.Configs.ViewsConfigWrapper" preserve="all" />
-    <type fullname="Arkanoid.UI.Views.Hud.HudView" preserve="all" />
+    <type fullname="Arkanoid.UI.Fader.ScreenFaderView" preserve="all" />
+    <type fullname="Arkanoid.UI.Views.GameplayHud.GameplayHudView" preserve="all" />
+    <type fullname="Arkanoid.UI.Views.LevelMapHud.LevelMapHudView" preserve="all" />
     <type fullname="Arkanoid.UI.Views.Loss.LossView" preserve="all" />
+    <type fullname="Arkanoid.UI.Views.MainMenu.MainMenuView" preserve="all" />
     <type fullname="Arkanoid.UI.Views.Pause.PauseDialogView" preserve="all" />
     <type fullname="Arkanoid.UI.Views.ProgressBar" preserve="all" />
     <type fullname="Arkanoid.UI.Views.Win.WinView" preserve="all" />
@@ -38,14 +44,13 @@
     <type fullname="Arkanoid.Gameplay.Features.Effects.Configs.EffectId" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Gameplay.Features.Effects.LineBombRequest" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Gameplay.Features.Effects.TriggerEffectOnDestruction" preserve="nothing" serialized="true" />
-    <type fullname="Arkanoid.Gameplay.Features.GameField.Configs.FieldConfig" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Gameplay.Features.LevelProgress.CountsForWin" preserve="nothing" serialized="true" />
-    <type fullname="Arkanoid.Gameplay.Features.Levels.Configs.LevelConfig" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Gameplay.Features.Levels.Configs.PackConfig" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Gameplay.Features.Paddle.Configs.PaddleConfig" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Gameplay.Features.Physics.Configs.PhysicsConfig" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Infrastructure.AssetsManagement.AssetReferences.AssetReferenceComponent`1" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Infrastructure.EntityConfigs.EntityConfig" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.LevelMap.Configs.LevelMapVisualsConfig" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.UI.Configs.ViewsConfig" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
@@ -91,8 +96,10 @@
   </assembly>
   <assembly fullname="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Camera" preserve="all" />
+    <type fullname="UnityEngine.Cubemap" preserve="all" />
     <type fullname="UnityEngine.GameObject" preserve="all" />
     <type fullname="UnityEngine.LightmapSettings" preserve="all" />
+    <type fullname="UnityEngine.LineRenderer" preserve="all" />
     <type fullname="UnityEngine.Material" preserve="all" />
     <type fullname="UnityEngine.Object" preserve="all" />
     <type fullname="UnityEngine.RectTransform" preserve="all" />
