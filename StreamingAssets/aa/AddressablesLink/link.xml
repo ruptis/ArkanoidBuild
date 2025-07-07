@@ -6,17 +6,34 @@
     <type fullname="Arkanoid.Gameplay.Features.Blocks.Configs.GeneralBlocksConfigWrapper" preserve="all" />
     <type fullname="Arkanoid.Gameplay.Features.Cheats.View.CheatsView" preserve="all" />
     <type fullname="Arkanoid.Gameplay.Features.Effects.Configs.EffectConfigWrapper" preserve="all" />
+    <type fullname="Arkanoid.Gameplay.Features.Effects.Configs.EffectsPrefabsConfigWrapper" preserve="all" />
+    <type fullname="Arkanoid.Gameplay.Features.GameFlow.Configs.WinConfigWrapper" preserve="all" />
+    <type fullname="Arkanoid.Gameplay.Features.GameFlow.View.WinParticlesView" preserve="all" />
+    <type fullname="Arkanoid.Gameplay.Features.GameFlow.View.WinParticlesViewProvider" preserve="all" />
     <type fullname="Arkanoid.Gameplay.Features.Levels.Configs.PackConfigWrapper" preserve="all" />
     <type fullname="Arkanoid.Gameplay.Features.Paddle.Configs.PaddleConfigWrapper" preserve="all" />
     <type fullname="Arkanoid.Gameplay.Features.Physics.Configs.PhysicsConfigWrapper" preserve="all" />
+    <type fullname="Arkanoid.Gameplay.Features.Statuses.Configs.StatusConfigWrapper" preserve="all" />
+    <type fullname="Arkanoid.Gameplay.Features.ViewSync.Animations.BallSpawnAnimation" preserve="all" />
+    <type fullname="Arkanoid.Gameplay.Features.ViewSync.Animations.BlockDeathAnimation" preserve="all" />
+    <type fullname="Arkanoid.Gameplay.Features.ViewSync.Animations.BlockHitAnimation" preserve="all" />
+    <type fullname="Arkanoid.Gameplay.Features.ViewSync.Animations.BlockSpawnAnimation" preserve="all" />
+    <type fullname="Arkanoid.Gameplay.Features.ViewSync.Animations.BoostBlockDeathAnimation" preserve="all" />
+    <type fullname="Arkanoid.Gameplay.Features.ViewSync.Animations.BoostBlockSpawnAnimation" preserve="all" />
+    <type fullname="Arkanoid.Gameplay.Features.ViewSync.Animations.PaddleSpawnAnimation" preserve="all" />
+    <type fullname="Arkanoid.Gameplay.Features.ViewSync.Providers.AdditionalSpriteRendererComponentProvider" preserve="all" />
+    <type fullname="Arkanoid.Gameplay.Features.ViewSync.Providers.AutoDestructParticleProvider" preserve="all" />
     <type fullname="Arkanoid.Gameplay.Features.ViewSync.Providers.CrackSpriteRendererComponentProvider" preserve="all" />
+    <type fullname="Arkanoid.Gameplay.Features.ViewSync.Providers.MonoViewAnimatorProvider" preserve="all" />
     <type fullname="Arkanoid.Gameplay.Features.ViewSync.Providers.SpriteRendererComponentProvider" preserve="all" />
     <type fullname="Arkanoid.Gameplay.Features.ViewSync.Providers.TransformComponentProvider" preserve="all" />
+    <type fullname="Arkanoid.Gameplay.Features.ViewSync.ViewAnimator.CompositeViewAnimator" preserve="all" />
     <type fullname="Arkanoid.Infrastructure.ConfigsProviding.Manifests.BlocksConfigsManifest" preserve="all" />
     <type fullname="Arkanoid.Infrastructure.ConfigsProviding.Manifests.EffectsConfigsManifest" preserve="all" />
     <type fullname="Arkanoid.Infrastructure.ConfigsProviding.Manifests.GeneralConfigsManifest" preserve="all" />
     <type fullname="Arkanoid.Infrastructure.ConfigsProviding.Manifests.LevelsManifest" preserve="all" />
     <type fullname="Arkanoid.Infrastructure.ConfigsProviding.Manifests.PacksManifest" preserve="all" />
+    <type fullname="Arkanoid.Infrastructure.ConfigsProviding.Manifests.StatusesConfigsManifest" preserve="all" />
     <type fullname="Arkanoid.Infrastructure.EntityViews.EntityBehaviour" preserve="all" />
     <type fullname="Arkanoid.LevelMap.Configs.LevelMapVisualsConfigWrapper" preserve="all" />
     <type fullname="Arkanoid.LevelMap.Providers.LevelNodeViewProvider" preserve="all" />
@@ -25,6 +42,7 @@
     <type fullname="Arkanoid.UI.Configs.ViewsConfigWrapper" preserve="all" />
     <type fullname="Arkanoid.UI.Fader.ScreenFaderView" preserve="all" />
     <type fullname="Arkanoid.UI.Views.GameplayHud.GameplayHudView" preserve="all" />
+    <type fullname="Arkanoid.UI.Views.GameplayHud.StatusIconView" preserve="all" />
     <type fullname="Arkanoid.UI.Views.LevelMapHud.LevelMapHudView" preserve="all" />
     <type fullname="Arkanoid.UI.Views.Loss.LossView" preserve="all" />
     <type fullname="Arkanoid.UI.Views.MainMenu.MainMenuView" preserve="all" />
@@ -35,21 +53,58 @@
     <type fullname="Arkanoid.Gameplay.Features.Blocks.Configs.BlockConfig" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Gameplay.Features.Blocks.Configs.BlockId" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Gameplay.Features.Blocks.Configs.GeneralBlocksConfig" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Boosts.FallingMovement" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Boosts.KillIfPickedUp" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Boosts.Pickupable" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Collisions.AABB" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Collisions.AABBCollider" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Damage.DamagePlayerRequest" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Gameplay.Features.Damage.Health" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Gameplay.Features.Damage.Invulnerable" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Destruction.DestructIfFallen" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Gameplay.Features.Effects.AreaDamageRequest" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Gameplay.Features.Effects.BlockColor" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Gameplay.Features.Effects.ChainColorBombRequest" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Gameplay.Features.Effects.Configs.EffectConfig" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Gameplay.Features.Effects.Configs.EffectId" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Effects.Configs.EffectsPrefabsConfig" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Effects.InheritContactPosition" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Effects.InheritSourcePosition" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Effects.InheritSourceSimulationPosition" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Effects.InheritViewColor" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Gameplay.Features.Effects.LineBombRequest" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Effects.TriggerEffectOnCollision" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Effects.TriggerEffectOnDamageTaken" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Gameplay.Features.Effects.TriggerEffectOnDestruction" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Effects.TriggerEffectOnPickup" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.GameFlow.Configs.WinConfig" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Gameplay.Features.LevelProgress.CountsForWin" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Gameplay.Features.Levels.Configs.PackConfig" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Lifetime.Alive" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Gameplay.Features.Paddle.Configs.PaddleConfig" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Gameplay.Features.Physics.Configs.PhysicsConfig" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Spawning.LaunchDirection" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Spawning.RandomLaunchDirection" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Spawning.SpawnBallRequest" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Stats.BallSpeedModifier" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Stats.PaddleHalfLifeModifier" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Statuses.ApplyStatusOnPickup" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Statuses.Configs.StatusConfig" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Statuses.Configs.StatusId" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.Stickiness.StickyPaddle" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.ViewSync.AdditionalSprite" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.ViewSync.PlayOnCreate" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.ViewSync.PlayOnDamageTaken" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.ViewSync.PlayOnDeath" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.ViewSync.Position" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.ViewSync.Size" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.ViewSync.ViewAnimator.AnimationId" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.ViewSync.ViewColor" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Gameplay.Features.ViewSync.ViewSprite" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Infrastructure.AssetsManagement.AssetReferences.AssetReferenceComponent`1" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Infrastructure.EntityConfigs.EntityConfig" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Infrastructure.EntityViews.PoolableView" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Infrastructure.EntityViews.ViewReference" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.LevelMap.Configs.LevelMapVisualsConfig" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.UI.Configs.ViewsConfig" preserve="nothing" serialized="true" />
   </assembly>
@@ -72,6 +127,7 @@
   </assembly>
   <assembly fullname="Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
     <type fullname="UnityEngine.ResourceManagement.ResourceProviders.AssetBundleProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.AtlasSpriteProvider" preserve="all" />
     <type fullname="UnityEngine.ResourceManagement.ResourceProviders.BundledAssetProvider" preserve="all" />
     <type fullname="UnityEngine.ResourceManagement.ResourceProviders.InstanceProvider" preserve="all" />
     <type fullname="UnityEngine.ResourceManagement.ResourceProviders.SceneProvider" preserve="all" />
@@ -86,6 +142,7 @@
     <type fullname="TMPro.LigatureSubstitutionRecord" preserve="nothing" serialized="true" />
     <type fullname="TMPro.MarkPositionAdjustment" preserve="nothing" serialized="true" />
     <type fullname="TMPro.MarkToBaseAdjustmentRecord" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_Character" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_FontFeatureTable" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_FontWeightPair" preserve="nothing" serialized="true" />
     <type fullname="TMPro.VertexGradient" preserve="nothing" serialized="true" />
@@ -109,7 +166,13 @@
     <type fullname="UnityEngine.TextAsset" preserve="all" />
     <type fullname="UnityEngine.Texture2D" preserve="all" />
     <type fullname="UnityEngine.Transform" preserve="all" />
+    <type fullname="UnityEngine.U2D.SpriteAtlas" preserve="all" />
     <type fullname="UnityEngine.Events.PersistentCallGroup" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.RectOffset" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.ParticleSystem" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemRenderer" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Font" preserve="all" />
@@ -120,6 +183,7 @@
     <type fullname="UnityEngine.UI.Button" preserve="all" />
     <type fullname="UnityEngine.UI.CanvasScaler" preserve="all" />
     <type fullname="UnityEngine.UI.GraphicRaycaster" preserve="all" />
+    <type fullname="UnityEngine.UI.HorizontalLayoutGroup" preserve="all" />
     <type fullname="UnityEngine.UI.Image" preserve="all" />
     <type fullname="UnityEngine.UI.Mask" preserve="all" />
     <type fullname="UnityEngine.UI.AnimationTriggers" preserve="nothing" serialized="true" />
@@ -139,6 +203,8 @@
   </assembly>
   <assembly fullname="UnityEngine.TextCoreFontEngineModule">
     <type fullname="UnityEngine.TextCore.FaceInfo" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.TextCore.Glyph" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.TextCore.GlyphMetrics" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.TextCore.GlyphRect" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.TextCore.LowLevel.GlyphAdjustmentRecord" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.TextCore.LowLevel.GlyphPairAdjustmentRecord" preserve="nothing" serialized="true" />
