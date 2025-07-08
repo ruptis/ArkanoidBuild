@@ -31,10 +31,12 @@
     <type fullname="Arkanoid.Infrastructure.ConfigsProviding.Manifests.BlocksConfigsManifest" preserve="all" />
     <type fullname="Arkanoid.Infrastructure.ConfigsProviding.Manifests.EffectsConfigsManifest" preserve="all" />
     <type fullname="Arkanoid.Infrastructure.ConfigsProviding.Manifests.GeneralConfigsManifest" preserve="all" />
+    <type fullname="Arkanoid.Infrastructure.ConfigsProviding.Manifests.LanguagesManifest" preserve="all" />
     <type fullname="Arkanoid.Infrastructure.ConfigsProviding.Manifests.LevelsManifest" preserve="all" />
     <type fullname="Arkanoid.Infrastructure.ConfigsProviding.Manifests.PacksManifest" preserve="all" />
     <type fullname="Arkanoid.Infrastructure.ConfigsProviding.Manifests.StatusesConfigsManifest" preserve="all" />
     <type fullname="Arkanoid.Infrastructure.EntityViews.EntityBehaviour" preserve="all" />
+    <type fullname="Arkanoid.Infrastructure.Localization.Behaviours.LocalizedText" preserve="all" />
     <type fullname="Arkanoid.LevelMap.Configs.LevelMapVisualsConfigWrapper" preserve="all" />
     <type fullname="Arkanoid.LevelMap.Providers.LevelNodeViewProvider" preserve="all" />
     <type fullname="Arkanoid.LevelMap.Providers.LineRendererComponentProvider" preserve="all" />
@@ -43,11 +45,13 @@
     <type fullname="Arkanoid.UI.Fader.ScreenFaderView" preserve="all" />
     <type fullname="Arkanoid.UI.Views.GameplayHud.GameplayHudView" preserve="all" />
     <type fullname="Arkanoid.UI.Views.GameplayHud.StatusIconView" preserve="all" />
+    <type fullname="Arkanoid.UI.Views.Language.LanguageDialogView" preserve="all" />
+    <type fullname="Arkanoid.UI.Views.Language.LanguageOptionButton" preserve="all" />
     <type fullname="Arkanoid.UI.Views.LevelMapHud.LevelMapHudView" preserve="all" />
     <type fullname="Arkanoid.UI.Views.Loss.LossView" preserve="all" />
     <type fullname="Arkanoid.UI.Views.MainMenu.MainMenuView" preserve="all" />
     <type fullname="Arkanoid.UI.Views.Pause.PauseDialogView" preserve="all" />
-    <type fullname="Arkanoid.UI.Views.ProgressBar" preserve="all" />
+    <type fullname="Arkanoid.UI.Views.Progress.ProgressBar" preserve="all" />
     <type fullname="Arkanoid.UI.Views.Win.WinView" preserve="all" />
     <type fullname="Arkanoid.Gameplay.Features.Balls.Configs.BallConfig" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Gameplay.Features.Blocks.Configs.BlockConfig" preserve="nothing" serialized="true" />
@@ -105,6 +109,7 @@
     <type fullname="Arkanoid.Infrastructure.EntityConfigs.EntityConfig" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Infrastructure.EntityViews.PoolableView" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.Infrastructure.EntityViews.ViewReference" preserve="nothing" serialized="true" />
+    <type fullname="Arkanoid.Infrastructure.Localization.Configs.LanguageId" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.LevelMap.Configs.LevelMapVisualsConfig" preserve="nothing" serialized="true" />
     <type fullname="Arkanoid.UI.Configs.ViewsConfig" preserve="nothing" serialized="true" />
   </assembly>
@@ -168,6 +173,7 @@
     <type fullname="UnityEngine.Transform" preserve="all" />
     <type fullname="UnityEngine.U2D.SpriteAtlas" preserve="all" />
     <type fullname="UnityEngine.Events.PersistentCallGroup" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.UnityEvent`1" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.RectOffset" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
@@ -186,6 +192,7 @@
     <type fullname="UnityEngine.UI.HorizontalLayoutGroup" preserve="all" />
     <type fullname="UnityEngine.UI.Image" preserve="all" />
     <type fullname="UnityEngine.UI.Mask" preserve="all" />
+    <type fullname="UnityEngine.UI.VerticalLayoutGroup" preserve="all" />
     <type fullname="UnityEngine.UI.AnimationTriggers" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.Button/ButtonClickedEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.ColorBlock" preserve="nothing" serialized="true" />
